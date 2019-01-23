@@ -51,7 +51,7 @@ class ContactPage extends Component {
       body: JSON.stringify(message),
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://alinalodahl.herokuapp.com/contact"
       }
     })
     .then(res => {
