@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
-var index = require('./routes/index');
+var router = require('./routes');
 
 var app = express();
 
@@ -30,7 +30,7 @@ var isOriginValid = function (req, callback) {
   callback(null, corsOptions) // callback expects two parameters: error and options
 }
 
-app.use('/contactAlina', cors(isOriginValid), index);
+app.use('/api/contact', cors(isOriginValid), router);
 app.use('/', index);
 console.log("Your app is listening at PORT 3000");
 

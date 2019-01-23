@@ -46,7 +46,7 @@ class ContactPage extends Component {
   }
 
   sendEmailRequest(message) {
-    fetch(`https://alinalodahl.herokuapp.com/contactAlina`, {
+    fetch(`https://alinalodahl.herokuapp.com/api/contact`, {
       method: "POST",
       body: JSON.stringify(message),
       headers: {

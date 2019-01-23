@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/contactAlina', (req, res) => {
+router.post('/', (req, res) => {
   const msg = {
       to: ADMIN_EMAIL,
       from: "email@alinalodahl.com",
