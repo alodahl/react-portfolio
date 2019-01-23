@@ -30,7 +30,7 @@ var isOriginValid = function (req, callback) {
   callback(null, corsOptions) // callback expects two parameters: error and options
 }
 
-app.use('/contact', cors(isOriginValid), index);
+app.use('/contactAlina', cors(isOriginValid), index);
 app.use('/', index);
 console.log("Your app is listening at PORT 3000");
 
