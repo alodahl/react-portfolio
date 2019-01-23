@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./ContactPage.css";
 import AlinaPhoto from "../../images/AlinaPortrait2018.png";
-const BASE_URL = "http://localhost:3000" || "https://alinalodahl.herokuapp.com";
 
 class ContactPage extends Component {
   constructor(props) {
@@ -9,10 +8,10 @@ class ContactPage extends Component {
     this.state = {
       form: {
         name: "",
-        org: "",
+        organization: "",
         email: "",
         subject: "",
-        text: ""
+        emailText: ""
       },
       messageStatus: undefined,
     }
@@ -47,7 +46,7 @@ class ContactPage extends Component {
   }
 
   sendEmailRequest(message) {
-    fetch(`${BASE_URL}/contact`, {
+    fetch(`https://alinalodahl.herokuapp.com/contact`, {
       method: "POST",
       body: JSON.stringify(message),
       headers: {
@@ -78,15 +77,15 @@ class ContactPage extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let validated = this.state.form.name && this.state.form.email && this.state.form.subject && this.state.form.text;
+    let validated = this.state.form.name && this.state.form.email && this.state.form.subject && this.state.form.emailText;
     if (validated) {
       this.sendEmailRequest(this.state.form);
       this.setState({ form: {
         name: "",
-        org: "",
+        organization: "",
         email: "",
         subject: "",
-        text: ""
+        emailText: ""
       } });
       window.scrollTo(0, 0);
     } else {
@@ -133,9 +132,9 @@ class ContactPage extends Component {
               name="organization"
               id="organization"
               className="block block-input"
-              value={this.state.form.org}
+              value={this.state.form.organization}
               autoComplete='organization'
-              onChange={(e) => this.handleInput(e, "org")}
+              onChange={(e) => this.handleInput(e, "organization")}
             />
             <label htmlFor="email" className="block">
               email address
@@ -169,8 +168,8 @@ class ContactPage extends Component {
               name="email-text"
               id="email-text"
               className="block block-input issue"
-              value={this.state.form.text}
-              onChange={(e) => this.handleInput(e, "text")}
+              value={this.state.form.emailText}
+              onChange={(e) => this.handleInput(e, "emailText")}
             >
             </textarea>
           </div>

@@ -31,7 +31,7 @@ export default class Navbar extends Component {
       <div className="navbar" role="navigation">
         <a href={document.URL.includes("contact")? "/" : "/contact" }title="contact alina"><div className="name"><p>alina lodahl</p></div></a>
         <div className="navlinks-div">
-          <button className="dropdown-icon" id="dropdown-icon" role="button" onClick={(e) => this.handleClick(e)}>&#9776;</button>
+          <button className="dropdown-icon" id="dropdown-icon" onClick={(e) => this.handleClick(e)}>&#9776;</button>
           { this.state.width > 529 || this.state.showNavLinks
           ?
             <div className="navlinks-only js-navlinks-only">
