@@ -35,7 +35,7 @@ export default class Landing extends Component {
             </p>
             <div className="button-div">
               <a href="#projects" className="button-link">view projects</a>
-              <a href="/contact" className="button-link button-link-email">email me</a>
+              <a href="mailto:alina@womenwhocode.com" className="button-link button-link-email">email me</a>
             </div>
         </div>
       </div>

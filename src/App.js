@@ -10,6 +10,7 @@ class App extends Component {
   // constructor(props) {
   //   super(props);
   // }
+  /* <Route path="/contact" component={ContactPage}/> */
 
   render() {
     return (
@@ -17,7 +18,6 @@ class App extends Component {
         <Navbar/>
         <main role="main">
           <Switch>
-            <Route path="/contact" component={ContactPage}/>
             <Route exact path="/" component={MainPage}/>
           </Switch>
         </main>
