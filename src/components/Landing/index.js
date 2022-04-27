@@ -11,16 +11,8 @@ export default class Landing extends Component {
         <img className="portrait" src={AlinaPortrait1} alt="Alina Lodahl Portrait"/>
         <div className="bio">
             <h2 className="message">I'm Alina Lodahl, a Software Engineer with a passion for problem-solving and visual aesthetics.</h2>
-            <p>  After graduating from
-              <a className="link" href="https://www.thinkful.com/press/#press-resources" target="_blank" rel="noopener noreferrer"> Thinkful</a>
-              's Full-Stack Web Development Program,
-              I've gained field experience in San Francisco as a Software Engineering Intern at
-              <a className="link" href="https://www.gliffy.com/"target="_blank" rel="noopener noreferrer"> Gliffy </a>
-              and
-              <a className="link" href="https://diwala.io/" target="_blank" rel="noopener noreferrer"> Diwala</a>
-              , a Software Engineer/Mentor at
-              <a className="link" href="https://www.colark.com/" target="_blank" rel="noopener noreferrer"> Colark</a>
-              , and a City Director with
+            <p>I've developed UI for web and enterprise software, and contributed to the community by creating open-source training tools and
+              as a Director with
               <a className="link" href="https://womenwhocode.com/sf/about"target="_blank" rel="noopener noreferrer"> Women Who Code</a>
               .
               <br/>
@@ -35,7 +27,7 @@ export default class Landing extends Component {
             </p>
             <div className="button-div">
               <a href="#projects" className="button-link">view projects</a>
-              <a href="mailto:alina@womenwhocode.com" className="button-link button-link-email">email me</a>
+              <a href="mailto:animblestudio@gmail.com" className="button-link button-link-email">email me</a>
             </div>
         </div>
       </div>

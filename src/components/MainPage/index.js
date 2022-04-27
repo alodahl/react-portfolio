@@ -13,7 +13,7 @@ class MainPage extends Component {
           <Landing/>
               <ProjectsCarousel />
               <div className="button-div">
-                <a href="mailto:alina@womenwhocode.com" className="button-link button-link-email">contact alina</a>
+                <a href="mailto:animblestudio@gmail.com" className="button-link button-link-email">contact alina</a>
                 <a href="https://www.linkedin.com/in/alina-lodahl/"  target="_blank" rel="noopener noreferrer" className="button-link">connect on linkedin</a>
               </div>
       </div>
