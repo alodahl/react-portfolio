@@ -11,8 +11,9 @@ export default class Landing extends Component {
         <img className="portrait" src={AlinaPortrait1} alt="Alina Lodahl Portrait"/>
         <div className="bio">
             <h2 className="message">I'm Alina Lodahl, a Software Engineer with a passion for problem-solving and visual aesthetics.</h2>
-            <p>I've developed UI for web and enterprise software, and contributed to the community by creating open-source training tools and
-              as a Director with
+            <p>I've developed UI for web and enterprise software, and contributed to the community by creating
+              <a className="link" href="https://github.com/Techtonica/curriculum/graphs/contributors" target="_blank" rel="noopener noreferrer"> open-source training tools </a>
+              and as a Director with
               <a className="link" href="https://womenwhocode.com/sf/about"target="_blank" rel="noopener noreferrer"> Women Who Code</a>
               .
               <br/>
@@ -21,9 +22,9 @@ export default class Landing extends Component {
               <a className="link" href="https://www.instagram.com/nimblestudio/" target="_blank" rel="noopener noreferrer"> Fine Art</a>
               , I've been able to apply much of my experience to Web Development.
               Training in visual design,
-              <a className="link" href="https://github.com/Techtonica/curriculum/graphs/contributors" target="_blank" rel="noopener noreferrer"> Technical Writing</a>
+              <a className="link" href="https://github.com/Techtonica/curriculum/blob/main/react-js/react-part-2-props.md" target="_blank" rel="noopener noreferrer"> technical writing</a>
               , project planning, and a productive experiment/critique cycle
-              have been valuable tools for creating and debugging web apps.
+              have been valuable tools for Agile creation and debugging of web apps.
             </p>
             <div className="button-div">
               <a href="#projects" className="button-link">view projects</a>
