@@ -139,7 +139,7 @@ const projectData = [
     links: [
       {
         url: "https://www.womenwhocode.com/sf/about",
-        text: "about wwcode"
+        text: "about wwcode sf"
       }
     ],
   },
